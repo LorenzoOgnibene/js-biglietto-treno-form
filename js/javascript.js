@@ -1,18 +1,18 @@
-const userKm = document.querySelector('input#kilometres');
-const userAge = document.querySelector('input#age');
-const input = document.querySelector('input#button');
+const userKm = document.getElementById('kilometres');
+const userAge = document.getElementById('age');
+const input = document.getElementById('button');
 
 input.addEventListener('click', 
     function(){
-       console.log(userAge.value);
-       console.log(userKm.value);
-       let ticketPrice = userKm.value * 0.2762;
-       console.log(ticketPrice);
-       if (userAge.value < 18){
+        console.log(userKm.value);
+        console.log(userAge.value);
+        let ticketPrice = userKm.value * 0.2762;
+        console.log(ticketPrice.toFixed(2));
+        if (userAge.value < 18){
             ticketPrice = ticketPrice * 0.825;
-            console.log(ticketPrice);
-       }else if (userAge.value >= 65){
+            console.log(ticketPrice.toFixed(2));
+        }else if (userAge.value >= 65){
             ticketPrice = ticketPrice * 0.667;
-            console.log(ticketPrice)
-       }
+            console.log(ticketPrice.toFixed(2))
+        }
 })
