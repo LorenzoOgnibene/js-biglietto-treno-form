@@ -1,0 +1,19 @@
+.my-form{
+    height: 100vh;
+    background-image: url('https://hips.hearstapps.com/cit.h-cdn.co/assets/17/12/1490119901-castello-di-hogwarts-harry-potter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kilometres option{
+    color: white;
+    background-color: black;
+}
+
+.color-gold{
+    color: #c08f01;
+}
+
+#age{
+    width: 50px;
+}
